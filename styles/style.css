@@ -240,3 +240,59 @@
     padding-top: 0px;
   }
 }
+
+/* Services */
+.services {
+  background: rgba(37, 77, 77, 0.2);
+  padding: 25px 177px 65px 176px;
+}
+.services-title {
+  font-family: var(--playBlack);
+  font-size: 51px;
+  text-align: center;
+  color: #2f2e2e;
+  margin-bottom: 53px;
+}
+.services__body {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.services__item {
+}
+.services__item-img {
+  width: 103px;
+  height: 103px;
+  margin-bottom: 2px;
+}
+.services__item-name {
+  font-family: var(--playBlack);
+  font-size: 27px;
+  color: #2f2e2e;
+  margin-bottom: 13px;
+}
+.services__item-txt {
+  font-family: var(--playRegular);
+  font-size: 16px;
+  color: #2f2e2e;
+  max-width: 158px;
+  line-height: 133%;
+}
+
+@media screen and (max-width: 1000px) {
+  .services {
+    padding: 25px 30px 65px 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services__body {
+    flex-direction: column;
+  }
+  .services-title {
+    font-size: 36px;
+  }
+  .services__item-txt {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
