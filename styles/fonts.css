@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Barlow;
+  src: url(../fonts/Barlow-SemiBold.woff);
+}
+@font-face {
+  font-family: InBlack;
+  src: url(../fonts/Inter-Black.woff);
+}
+@font-face {
+  font-family: InBold;
+  src: url(../fonts/Inter-Bold.woff);
+}
+@font-face {
+  font-family: InExtraLight;
+  src: url(../fonts/Inter-ExtraLight.woff);
+}
+@font-face {
+  font-family: InRegular;
+  src: url(../fonts/Inter-Regular.woff);
+}
+@font-face {
+  font-family: InSemiBold;
+  src: url(../fonts/Inter-SemiBold.woff);
+}
+@font-face {
+  font-family: PlayBlack;
+  src: url(../fonts/PlayfairDisplay-Black.woff);
+}
+@font-face {
+  font-family: PlayBold;
+  src: url(../fonts/PlayfairDisplay-Bold.woff);
+}
+@font-face {
+  font-family: PlayRegular;
+  src: url(../fonts/PlayfairDisplay-Regular.woff);
+}

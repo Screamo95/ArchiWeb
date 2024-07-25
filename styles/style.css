@@ -1,0 +1,15 @@
+/* Global */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --barlow: Barlow;
+  --inBlack: InBlack;
+  --inBold: InBold;
+  --inExtraLight: InExtraLight;
+  --inRegular: InRegular;
+  --inSemiBold: InSemiBold;
+  --playBlack: PlayBlack;
+  --playBold: PlayBold;
+  --playRegular: PlayRegular;
+}
