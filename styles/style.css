@@ -13,3 +13,230 @@
   --playBold: PlayBold;
   --playRegular: PlayRegular;
 }
+
+/* Header */
+.header {
+}
+.header__top {
+  padding: 50px 100px 0 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 94px;
+}
+.header__top-logo {
+  font-family: var(--barlow);
+  font-size: 42px;
+  color: #2f2e2e;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 107px;
+  margin-left: 375px;
+  margin-bottom: 2px;
+}
+.header__nav-link {
+  text-decoration: none;
+  font-family: var(--inRegular);
+  font-size: 20px;
+  text-align: center;
+  color: #2f2e2e;
+  cursor: pointer;
+}
+.header__nav-link:hover {
+  font-family: var(--inBold);
+}
+.header__top-search img {
+  width: 25px;
+  height: 22px;
+  margin-left: 50px;
+}
+.header__bottom {
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 97px;
+  padding-bottom: 95px;
+}
+.header__content {
+  background: linear-gradient(91deg, rgba(244, 246, 245, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+  max-width: 691px;
+  padding: 138px 0 136px 100px;
+}
+.header__content-title {
+  font-family: var(--playBlack);
+  font-size: 51px;
+  color: #2f2e2e;
+  max-width: 425px;
+  margin-bottom: 8px;
+  line-height: 134%;
+}
+.header__content-txt {
+  font-family: var(--inExtraLight);
+  font-size: 32px;
+  color: #2f2e2e;
+  max-width: 436px;
+  line-height: 136%;
+}
+.burger__open {
+  cursor: pointer;
+  display: none;
+}
+.burger__open-line {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 5px;
+}
+.burger__open-line:last-child {
+  margin-bottom: 0;
+}
+.burger__menu {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-left: 50px;
+  border-right: 1px solid #000;
+}
+.burger__menu-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.burger__menu-open {
+  left: 0;
+  animation: burgerOpenX 0.5s linear;
+}
+.burger__menu-close {
+  left: -320px;
+  animation: burgerCloseX 0.5s linear;
+}
+.burger__nav-link {
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-family: var(--inRegular);
+  font-size: 20px;
+  color: #2f2e2e;
+}
+.burger__close {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.burger__close-line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 16px;
+}
+.burger__close-line:first-child {
+  transform-origin: top left;
+  transform: rotate(40deg);
+}
+.burger__close-line:last-child {
+  margin-bottom: 0;
+  transform-origin: bottom left;
+  transform: rotate(320deg);
+}
+.burger__end-line {
+  width: 230px;
+  height: 1px;
+  background-color: black;
+  margin-top: 20px;
+}
+@keyframes burgerOpenX {
+  0% {
+    left: -320px;
+  }
+  50% {
+    left: -160px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes burgerCloseX {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -160px;
+  }
+  100% {
+    left: -320px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .header__nav {
+    margin-left: 150px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .header__nav {
+    margin-left: 0px;
+    gap: 50px;
+  }
+  .header__top-search img {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header__top {
+    padding: 50px 30px 0 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header__top {
+    align-items: center;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__top-search {
+    display: none;
+  }
+  .header__top-search_burger {
+    display: block;
+    margin-top: 110px;
+  }
+  .burger__open {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__top {
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+  .header__content {
+    padding: 138px 0 136px 30px;
+  }
+  .header__content-title {
+    font-size: 34px;
+    max-width: 300px;
+  }
+  .header__content-txt {
+    font-size: 24px;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__content-title {
+    font-size: 28px;
+    max-width: 250px;
+  }
+  .header__content-txt {
+    font-size: 20px;
+    max-width: 250px;
+  }
+  .header__top-logo {
+    font-size: 30px;
+  }
+  .header__bottom {
+    padding-top: 0px;
+  }
+}
