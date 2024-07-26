@@ -15,8 +15,6 @@
 }
 
 /* Header */
-.header {
-}
 .header__top {
   padding: 50px 100px 0 95px;
   display: flex;
@@ -121,6 +119,7 @@
   font-family: var(--inRegular);
   font-size: 20px;
   color: #2f2e2e;
+  text-decoration: none;
 }
 .burger__close {
   cursor: pointer;
@@ -257,8 +256,6 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-}
-.services__item {
 }
 .services__item-img {
   width: 103px;
@@ -560,9 +557,6 @@
 }
 .footer__body {
   display: flex;
-}
-.footer__left {
-
 }
 .footer__left-logo {
   font-family: var(--barlow);

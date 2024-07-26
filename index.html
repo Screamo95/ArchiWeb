@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.min.css">
   <title>ArchiWeb</title>
 </head>
 <body>
   
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__top">
       <h2 class="header__top-logo">ArchiWeb</h2>
       <div class="header__nav">
-        <a href="#" class="header__nav-link">Home</a>
-        <a href="#" class="header__nav-link">Projects</a>
-        <a href="#" class="header__nav-link">About</a>
-        <a href="#" class="header__nav-link">Contact</a>
+        <a href="#home" class="header__nav-link">Home</a>
+        <a href="#projects" class="header__nav-link">Projects</a>
+        <a href="#about" class="header__nav-link">About</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
       </div>
       <div class="burger__open">
         <div class="burger__open-line"></div>
@@ -28,10 +28,18 @@
       <div class="burger__menu">
         <div class="burger__menu-inner">
           <ul class="burger__nav">
-            <li class="burger__nav-link">Home</li>
-            <li class="burger__nav-link">Projects</li>
-            <li class="burger__nav-link">About</li>
-            <li class="burger__nav-link">Contact</li>
+            <a href="#home" class="burger__nav-link">
+              <li class="burger__nav-link">Home</li>
+            </a>
+            <a href="#projects" class="burger__nav-link">
+              <li class="burger__nav-link">Projects</li>
+            </a>
+            <a href="#about" class="burger__nav-link">
+              <li class="burger__nav-link">About</li>
+            </a>
+            <a href="#contact" class="burger__nav-link">
+              <li class="burger__nav-link">Contact</li>
+            </a>
           </ul>
           <div class="burger__right">
             <div class="burger__close">
@@ -80,7 +88,7 @@
   </section>
 
   <!-- About -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__container">
       <div class="about__body">
         <img src="img/about_img.png" alt="About us" class="about-img">
@@ -94,7 +102,7 @@
   </section>
 
   <!-- Projects -->
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="projects__container">
       <h2 class="projects-title">Our Projects</h2>
       <div class="projects__body">
@@ -127,7 +135,7 @@
   </section>
 
   <!-- Test -->
-  <section class="test">
+  <section class="test" id="contact">
     <h2 class="test-title">Testimonial</h2>
     <div class="test__body">
       <div class="test__item">
